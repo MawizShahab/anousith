@@ -1,0 +1,399 @@
+.main-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.login-container {
+  background-color: transparent;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.login-container .card {
+  max-width: 350px !important;
+}
+
+/* color */
+.text-link {
+  color: #0d6efd !important;
+}
+
+/* modal */
+.custom-modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.custom-modal-body .input-group {
+  align-items: center;
+}
+.custom-modal-body .input-group-text {
+  background-color: #cccccc;
+  padding: 0.5em;
+  height: 46px;
+  color: #e60000;
+}
+
+.custom-modal-body div,
+.custom-modal-body span {
+  font-size: 1.1rem !important;
+}
+
+button,
+p,
+div,
+span,
+input,
+select,
+label {
+  font-size: 1rem !important;
+}
+.btn-lg {
+  height: 45px !important;
+}
+
+.invalid {
+  color: #e60000;
+  font-size: small;
+  font-style: italic;
+  margin-top: 6px;
+}
+.invalid-black {
+  color: #666666;
+  font-size: small;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.text-small {
+  font-size: small;
+  font-style: italic;
+}
+
+/* form */
+.form-group label {
+  font-size: 0.9rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #000000 !important;
+}
+.form-group.basic input {
+  font-size: 1.2rem !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+/* icon */
+.ans-whatsapp {
+  background-image: url("./img/whatsapp.svg");
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+input::placeholder {
+  opacity: 0.3 !important;
+}
+
+.item label {
+  opacity: 0.7 !important;
+}
+
+.item .text-muted {
+  color: #000000 !important;
+}
+
+.text-field,
+.form-control {
+  font-family: "LAOS" !important;
+  border: "none" !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+  height: 50px !important;
+}
+
+.fl-primary {
+  font-family: "LAOS" !important;
+}
+
+/* icon Home */
+.icon-wrapper {
+  /* background-color: #E60000 !important; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* border-radius: 50% !important; */
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.facebook-page {
+  border-radius: 7px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.longBorder {
+  border-style: dotted;
+  border-radius: 10px;
+  padding: 20 !important;
+  color: rgb(155, 144, 144);
+}
+
+#customWidth {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: black;
+  position: fixed;
+}
+
+.app-container {
+  /* max-width: 400px !important;
+    display: block;
+    margin: 0 auto; */
+  background-color: #f0f2f5 !important;
+  /* overflow: hidden; */
+}
+
+/* ResponSive Of Web   */
+@media (min-width: 480px) and (min-height: 500px) {
+  .customFont {
+    font-size: 18px !important;
+  }
+  .menu-iconWeb {
+    display: block;
+    background: #b51818;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    align-items: center !important;
+  }
+  .customWidth {
+    width: 16px !important;
+    height: 30px !important;
+  }
+  .customHeight {
+    height: 550px !important;
+  }
+  .customTop {
+    margin-top: -1.6rem !important;
+  }
+  .customTopWeb {
+    margin-top: 0rem !important;
+  }
+  .customIcon {
+    margin-left: 35% !important;
+    display: block;
+  }
+  .customPaddingTopWeb {
+    padding: 5px !important;
+  }
+  .customFormLogIn {
+    width: 86% !important;
+  }
+  .hiddenIconOfWeb {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .customSize {
+    font-size: 25px !important;
+  }
+  .customPictureSlide {
+    width: auto !important;
+    height: auto !important;
+    border-radius: 50%;
+  }
+
+  .customImageKyc {
+    width: 100% !important;
+    height: 280px !important;
+  }
+  .customImageKycCard {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .customImageKycUpload {
+    width: 500px !important;
+    height: 240px !important;
+    margin-top: 15px !important;
+    background-color: #ededed !important;
+  }
+  /* of Branch Public */
+  .cardRadiusBranch {
+    border-radius: 10px !important;
+    width: 30px !important;
+    height: 25px !important;
+    opacity: 0.5 !important;
+    margin-top: 4px !important;
+  }
+  .customFontPhoneBranch {
+    font-size: 16px !important;
+    margin-top: 2px !important;
+  }
+  /* end */
+}
+/*  ResponSive OF  mobile */
+@media only screen and (max-width: 500px) {
+  .customFont {
+    font-size: 1ຸpx !important;
+  }
+  .customFontNav {
+    font-size: 15px !important;
+  }
+  .customFontItem {
+    font-size: 12px !important;
+  }
+  .customWidth {
+    width: 5px !important;
+    height: 20px !important;
+  }
+  .customTop {
+    margin-top: -31px !important;
+  }
+  .customTopDate {
+    margin-top: -2px !important;
+  }
+  .customIcon {
+    margin-left: 16% !important;
+  }
+  .customHeight {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    background-color: #e60000 !important;
+  }
+  .customSize {
+    font-size: 25px !important;
+  }
+  .hiddenApp {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .marginTops {
+    margin-top: -6px !important;
+  }
+  .customPictureSlide {
+    width: auto !important;
+    height: auto !important;
+    border-radius: 50%;
+  }
+  /* ຍາວເກີນຕົວໜັງສືຈ້ຳໆ */
+  .textLeftCustom {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+  }
+  /* ຍາວເກີນຕົວໜັງສືຈ້ຳໆຢູ່ສາຂາ */
+  .textCustomBranch {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 180px;
+  }
+  .cardRadiusBranch {
+    border-radius: 10px !important;
+    width: 25px !important;
+    height: 20px !important;
+    opacity: 0.5 !important;
+    margin-top: 4px !important;
+  }
+  .customFontPhoneBranch {
+    font-size: 12px !important;
+    margin-top: 2px !important;
+  }
+  /* end */
+  .textRightCustom {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+    text-align: right;
+  }
+  .customImageKycUpload {
+    margin-top: 1px;
+    height: 95px;
+    background-color: #ededed !important;
+  }
+  .customImageKycCard {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .customImageKyc {
+    width: 100% !important;
+    height: 100px !important;
+  }
+}
+/* of BoxText field */
+.customBox {
+  border-radius: 8px !important;
+  height: 50px !important;
+  background-color: #ffffff !important;
+}
+
+/* style wallet  */
+.card_wallet,
+.transactions,
+.listView {
+  background-color: #e60000;
+  color: white !important;
+  margin-top: 5px;
+}
+.page_card {
+  height: 30%;
+}
+.appCapsule {
+  height: auto;
+}
+
+.bg-custom {
+  background-color: #f7f7f7 !important;
+}
+.customerButtonActive {
+  background-color: #b51818 !important;
+  border-radius: 1px !important;
+  color: white !important;
+}
+
+.modal-content {
+  border-radius: 15px !important;
+}
+
+/* customBoxSelect Of province */
+.css-13cymwt-control {
+  border-radius: 8px !important;
+}
+
+.css-1nmdiq5-menu {
+  /* background-color: #666666 !important; */
+  margin-top: -0.04px !important;
+}
+/* custom button radius */
+.btn-radius {
+  border-radius: 12px !important;
+}
+
+/* customBill */
+.actionCircleLeft {
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  margin-bottom: -15px !important;
+  background-color: silver !important;
+  margin-left: -20px !important;
+  z-index: 9999 !important;
+}
+
+.actionCircRight {
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  margin-bottom: -15px !important;
+  background-color: silver !important;
+  margin-right: -20px !important;
+  z-index: 9999 !important;
+}
+/* end */

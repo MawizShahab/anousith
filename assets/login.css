@@ -1,0 +1,102 @@
+.hero {
+  padding-block-start: 70px;
+  background-color: #e60000 !important;
+  margin-block-start: -70px;
+  margin-inline-start: -20px;
+  margin-inline-end: -20px;
+  margin-block-end: 20px;
+  /* box-shadow: 1px 1px 20px #888888; */
+}
+.menu-icon {
+  display: block;
+  background: #bd2130;
+  border-radius: 12px;
+  padding: 10% !important;
+  margin: 10% !important;
+  align-items: center !important;
+}
+.text-menu {
+  margin-block-start: 20px !important;
+  font-size: 60% !important;
+  color: rgb(120, 120, 120);
+  font-weight: bold !important;
+}
+.icon {
+  inline-size: 90% !important;
+  block-size: 90% !important;
+}
+
+.form-control {
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px !important;
+}
+
+.contain {
+  background-color: #ffffff;
+  block-size: 100vh;
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+  /* background-image:url("../../../image/login_icon.jpg"); */
+  background-color: whitesmoke;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+}
+.form_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  min-inline-size: 800px;
+  margin-block-end: 20px;
+}
+.title_name {
+  color: #e60000;
+  font-size: 64px;
+  margin-block-end: 50px;
+}
+.form_title {
+  color: #ffffff;
+  margin-block-start: 50px;
+  padding-block-end: 50px;
+}
+.form {
+  inline-size: 45%;
+}
+.form-control {
+  font-size: 24px;
+  /* border-radius: 10px; */
+}
+
+.btn {
+  /* border-radius: 20px; */
+}
+.in-valid {
+  border-color: #e60000 !important;
+}
+body {
+  background-color: rgb(242, 238, 238) !important;
+}
+
+.exampleModalLabel {
+  background-color: yellow !important;
+}
+
+.hd {
+  text-align: center !important;
+}
+
+.fullView {
+  border-radius: 10px !important;
+  margin-top: 5px;
+}
+
+.bg-dangers {
+  background-color: #e60000 !important;
+}
