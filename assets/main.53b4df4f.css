@@ -22172,7 +22172,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 h4,
