@@ -1,0 +1,106 @@
+/* bill */
+.bill-container {
+  /* background-color: black; */
+  margin-top: 0.5em;
+}
+
+.bill-control-btn button {
+  border-radius: 50% !important;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem !important;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+/* content */
+.bill-content {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  /* min-width: 100px; */
+  width: 100%;
+  overflow: scroll;
+  background-color: #ffffff;
+}
+.bill-content img {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bill-item-list {
+  display: flex;
+  margin-top: 0px;
+}
+.bill-item-list span {
+  flex: 1;
+  color: black;
+}
+.bill-item-list span:first-child {
+  text-align: left;
+}
+.bill-item-list span:last-child {
+  text-align: right;
+}
+
+.bill-row {
+  display: flex;
+  border-top: 1px solid #b9b3b3;
+  /* border-bottom: 1px solid #000000; */
+}
+.bill-column {
+  flex: 1;
+  text-align: center;
+  padding: 0.1rem;
+  color: black;
+}
+.bill-column b {
+  font-weight: bold !important;
+}
+.bill-row .border-right {
+  border-right-color: #000000 !important;
+}
+.bill-row .fa-chevron-right {
+  font-size: 1.5rem;
+  color: #000000;
+  vertical-align: middle;
+  padding-top: 0.5rem;
+}
+
+/*line height*/
+.ln-h-1 {
+  line-height: 0.8rem;
+}
+
+#border {
+  border-bottom: 1px solid #ededf5;
+}
+
+.mt-top {
+  margin-top: -70 !important;
+}
+
+/* customerFomr */
+#outlined-basic-label {
+  background-color: white;
+  width: 20%;
+}
+.custom-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.CustomBottom {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 1px;
+  height: 3rem;
+  right: 0;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

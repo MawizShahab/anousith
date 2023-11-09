@@ -1,0 +1,88 @@
+.item-tab {
+  /* min-width: 100px; */
+  min-height: 55px !important;
+  white-space: nowrap;
+  padding: 10px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 1.1em !important;
+  opacity: 0.7;
+}
+.item-tab.active {
+  color: #e60000 !important;
+  border-bottom: 2px solid #e60000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+.CustomHeader {
+  position: fixed !important;
+  left: 0 !important;
+  top: 56px !important;
+  height: 1rem !important;
+  right: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 1000;
+}
+
+.tab-switch {
+  margin: 0 auto !important;
+}
+
+.customerButton {
+  background-color: white !important;
+  border-radius: 0px !important;
+  border-radius: 10px !important;
+}
+
+.CustomSummaryBottom {
+  position: fixed;
+  left: 0;
+  bottom: 1px;
+  height: 3rem;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.customPaddingTopWeb.custom-list {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.other-info {
+  flex: 1;
+}
+
+/* ResponSive Of Web  */
+@media (min-width: 480px) and (min-height: 500px) {
+  #customFont {
+    font-size: 17px !important;
+  }
+  .customWidthCodBill {
+    width: 15% !important;
+  }
+}
+
+/*  ResponSive OF  mobile */
+@media only screen and (max-width: 500px) {
+  #customFont {
+    font-size: 14px !important;
+    color: black !important;
+  }
+  .customWidthCodBill {
+    width: 25% !important;
+  }
+  .customMarginTopCodBill {
+    margin-top: -4px !important;
+  }
+}
+
+.activeBgCardCOD {
+  background-color: #d2d2d4 !important;
+}
