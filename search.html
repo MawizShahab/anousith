@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Anousith Logistic" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/index.css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/login.css" /> -->
+    <link rel="stylesheet" href="./assets/app.css" />
+    <!-- <link rel="stylesheet" href="./assets/navbar.css" /> -->
+    <link rel="stylesheet" href="./assets/main.53b4df4f.css" />
+    <link rel="stylesheet" href="./assets/code-collection.css" />
+    <link rel="stylesheet" href="./assets/code.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&amp;display=block"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d27caa0c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    /> -->
+    <title>Search</title>
+    <style>
+      .css-eq8tg2 {
+        background-color: rgb(255, 255, 255);
+        color: rgba(0, 0, 0, 0.87);
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+          rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+          rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+        padding: 2px 4px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .css-18ay125 {
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0px;
+        border: 0px;
+        margin: 0px;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        text-align: center;
+        flex: 0 0 auto;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        overflow: visible;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: rgb(25, 118, 210);
+        padding: 10px;
+      }
+
+      .css-w0pj6f {
+        overflow: hidden;
+        pointer-events: none;
+        position: absolute;
+        z-index: 0;
+        inset: 0px;
+        border-radius: inherit;
+      }
+
+      .css-1vwxxf5 {
+        font-family: LAOS;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4375em;
+        color: rgba(0, 0, 0, 0.87);
+        box-sizing: border-box;
+        position: relative;
+        cursor: text;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        height: 45px;
+      }
+
+      .css-c6bojz {
+        font: inherit;
+        letter-spacing: inherit;
+        color: currentcolor;
+        padding: 4px 0px 5px;
+        border: 0px;
+        box-sizing: content-box;
+        background: none;
+        height: 1.4375em;
+        margin: 0px;
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+        min-width: 0px;
+        width: 100%;
+        animation-name: mui-auto-fill-cancel;
+        animation-duration: 10ms;
+        outline: 0;
+      }
+
+      .css-8atqhb {
+        width: 100%;
+      }
+
+      .css-u4p24i {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+
+      .css-mro3c9 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .css-11qjisw {
+        flex: 1 1 auto;
+      }
+
+      .css-mro3c9 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .css-95m0ql {
+        display: block;
+        border-color: rgb(189, 189, 189);
+        border-top-style: solid;
+        border-top-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="appCapsule">
+      <div class="CustomHeader nav-tabs-custom col-md-12 m-auto">
+        <div class="col-md-8 d-flex m-auto mt-1">
+          <div style="width: 100%">
+            <div
+              class="p-1 text-nowrap btn customerButtonActive btn-radius"
+              style="
+                display: flex;
+                overflow: auto hidden;
+                gap: 0.5rem;
+                cursor: pointer;
+                border-radius: 2rem;
+                height: 50px;
+              "
+            >
+              <center>ທັງໝົດ</center>
+            </div>
+          </div>
+          <div class="ms-1 me-1" style="width: 100%">
+            <div
+              class="p-1 text-nowrap btn bg-custom btn-radius"
+              style="
+                display: flex;
+                overflow: auto hidden;
+                gap: 0.5rem;
+                cursor: pointer;
+                border-radius: 2rem;
+                height: 50px;
+              "
+            >
+              <center>ຮອດຕົ້ນທາງ</center>
+            </div>
+          </div>
+          <div class="bg-custom mb-1" style="width: 100%">
+            <div
+              class="text-nowrap btn bg-custom btn-radius"
+              style="
+                display: flex;
+                overflow: auto hidden;
+                gap: 0.5rem;
+                cursor: pointer;
+                border-radius: 2rem;
+                height: 50px;
+              "
+            >
+              <center>ພັດສະດຸຕີກັບສຳເລັດ</center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-8 m-auto p-2">
+        <div class="col-md-12" style="margin-top: 10px">
+          <div class="appHeader text-light border-0 mr-0 text-center">
+            <div class="text-left" style="flex: 1 1 0%">
+              <button class="btn text-white">
+                <i class="fa fa-chevron-left fs-4" aria-hidden="true"></i>
+              </button>
+            </div>
+            ພັດສະດຸຕີກັບ
+            <div
+              class="text-white pageTitle text-right text-nowrap pr-0"
+              style="flex: 1 1 0%"
+            >
+              <button type="button" class="btn text-white mr-0">
+                <i class="fa-solid fa-calendar-days"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-top pt-3" style="margin-top: 40px">
+          <div class="w-100">
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 text-field form-control css-eq8tg2"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-18ay125"
+                tabindex="0"
+                type="button"
+                aria-label="directions"
+              >
+                <i class="fas fa-search text-secondary" aria-hidden="true"></i>
+                <span class="MuiTouchRipple-root css-w0pj6f"></span>
+              </button>
+              <div
+                class="MuiInputBase-root MuiInputBase-colorPrimary css-1vwxxf5"
+              >
+                <input
+                  placeholder="TrackingId, ເບີໂທຜູ້ຮັບ "
+                  type="search"
+                  class="MuiInputBase-input MuiInputBase-inputTypeSearch css-c6bojz"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <label class="customFontNav mt-1"
+            >ສະແດງ 1 - 100 ໃນ 30 ລາຍການ. 2023-08-01-2023-11-09</label
+          >
+        </div>
+        <div class="customerHeaderLists">
+          <div
+            class="card mb-2 customPaddingTopWeb custom-list"
+            style="cursor: pointer"
+          >
+            <div class="table-container">
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" style="width: 0px">
+                      <p
+                        class="bg-danger text-center me-1 ms-1"
+                        style="
+                          border-radius: 50px;
+                          width: 40px;
+                          height: 40px;
+                          opacity: 0.4;
+                        "
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="
+                            border-radius: 50px;
+                            font-size: 20px;
+                            margin-top: 10px;
+                          "
+                        >
+                          <path
+                            d="M20.0049 22H4.00488C3.4526 22 3.00488 21.5523 3.00488 21V3C3.00488 2.44772 3.4526 2 4.00488 2H20.0049C20.5572 2 21.0049 2.44772 21.0049 3V21C21.0049 21.5523 20.5572 22 20.0049 22ZM9.00488 6H7.00488V8C7.00488 10.7614 9.24346 13 12.0049 13C14.7663 13 17.0049 10.7614 17.0049 8V6H15.0049V8C15.0049 9.65685 13.6617 11 12.0049 11C10.348 11 9.00488 9.65685 9.00488 8V6Z"
+                          ></path>
+                        </svg>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="other-info">
+              <div
+                class="customFont"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <strong class="customFont">#1. ເຄື່ອງໃຊ້</strong>
+                <b class="text-end"
+                  ><i class="fa-solid fa-chevron-right me-2"></i
+                ></b>
+              </div>
+              <div
+                class="customFont customTopWeb customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customFont">ເລກບິນ:8097822075730</b>
+                <b class="customFontItem me-2"
+                  ><b class="text-success">ສົ່ງສຳເລັດ</b></b
+                >
+              </div>
+              <div
+                class="customTopDate customTopWeb"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                "
+                bis_skin_checked="1"
+              >
+                <div class="MuiBox-root css-8atqhb" bis_skin_checked="1">
+                  <div
+                    class="MuiStepper-root MuiStepper-horizontal css-u4p24i"
+                    bis_skin_checked="1"
+                  >
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="margin-left: -7px; margin-right: -10px"
+                      bis_skin_checked="1"
+                    >
+                      ສາຂາຕົ້ນທາງ
+                      <i
+                        class="fa-solid fa-circle-arrow-right"
+                        style="color: rgb(165, 176, 184)"
+                      ></i>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="
+                        background-color: rgb(113, 120, 125);
+                        border-radius: 50%;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div
+                        class="customWidth"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                        bis_skin_checked="1"
+                      >
+                        <i
+                          class="fa-sharp fa-solid fa-truck-fast customFontItem text-white"
+                          style="border-radius: 50px; margin-top: 0px"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      bis_skin_checked="1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="customFontItem"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(165, 176, 184); margin-left: -10px"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        ></path>
+                      </svg>
+                      ສາຂາປາຍທາງ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div
+                class="customFont customTop"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="textLeftCustom customFont">ສາຂາ ຕະຫຼາດໜອງໄຮ</b>
+                <b class="textRightCustom customFont me-1"
+                  >ສາຂາ ສີມຸງຄຸນ(ເມືອງນ່ານ)</b
+                >
+              </div>
+              <div
+                class="customFont customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customTopItem text-secondary">07-11-2023, 14:43</b>
+                <b class="me-2 customFont"
+                  >ສົ່ງສຳເລັດ: <b class="text-warning customFont">2</b> ມື້</b
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-2 customPaddingTopWeb custom-list"
+            style="cursor: pointer"
+          >
+            <div class="table-container">
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" style="width: 0px">
+                      <p
+                        class="bg-danger text-center me-1 ms-1"
+                        style="
+                          border-radius: 50px;
+                          width: 40px;
+                          height: 40px;
+                          opacity: 0.4;
+                        "
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="
+                            border-radius: 50px;
+                            font-size: 20px;
+                            margin-top: 10px;
+                          "
+                        >
+                          <path
+                            d="M20.0049 22H4.00488C3.4526 22 3.00488 21.5523 3.00488 21V3C3.00488 2.44772 3.4526 2 4.00488 2H20.0049C20.5572 2 21.0049 2.44772 21.0049 3V21C21.0049 21.5523 20.5572 22 20.0049 22ZM9.00488 6H7.00488V8C7.00488 10.7614 9.24346 13 12.0049 13C14.7663 13 17.0049 10.7614 17.0049 8V6H15.0049V8C15.0049 9.65685 13.6617 11 12.0049 11C10.348 11 9.00488 9.65685 9.00488 8V6Z"
+                          ></path>
+                        </svg>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="other-info">
+              <div
+                class="customFont"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <strong class="customFont">#1. ເຄື່ອງໃຊ້</strong>
+                <b class="text-end"
+                  ><i class="fa-solid fa-chevron-right me-2"></i
+                ></b>
+              </div>
+              <div
+                class="customFont customTopWeb customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customFont">ເລກບິນ:8097822075730</b>
+                <b class="customFontItem me-2"
+                  ><b class="text-success">ສົ່ງສຳເລັດ</b></b
+                >
+              </div>
+              <div
+                class="customTopDate customTopWeb"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                "
+                bis_skin_checked="1"
+              >
+                <div class="MuiBox-root css-8atqhb" bis_skin_checked="1">
+                  <div
+                    class="MuiStepper-root MuiStepper-horizontal css-u4p24i"
+                    bis_skin_checked="1"
+                  >
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="margin-left: -7px; margin-right: -10px"
+                      bis_skin_checked="1"
+                    >
+                      ສາຂາຕົ້ນທາງ
+                      <i
+                        class="fa-solid fa-circle-arrow-right"
+                        style="color: rgb(165, 176, 184)"
+                      ></i>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="
+                        background-color: rgb(113, 120, 125);
+                        border-radius: 50%;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div
+                        class="customWidth"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                        bis_skin_checked="1"
+                      >
+                        <i
+                          class="fa-sharp fa-solid fa-truck-fast customFontItem text-white"
+                          style="border-radius: 50px; margin-top: 0px"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      bis_skin_checked="1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="customFontItem"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(165, 176, 184); margin-left: -10px"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        ></path>
+                      </svg>
+                      ສາຂາປາຍທາງ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div
+                class="customFont customTop"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="textLeftCustom customFont">ສາຂາ ຕະຫຼາດໜອງໄຮ</b>
+                <b class="textRightCustom customFont me-1"
+                  >ສາຂາ ສີມຸງຄຸນ(ເມືອງນ່ານ)</b
+                >
+              </div>
+              <div
+                class="customFont customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customTopItem text-secondary">07-11-2023, 14:43</b>
+                <b class="me-2 customFont"
+                  >ສົ່ງສຳເລັດ: <b class="text-warning customFont">2</b> ມື້</b
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-2 customPaddingTopWeb custom-list"
+            style="cursor: pointer"
+          >
+            <div class="table-container">
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" style="width: 0px">
+                      <p
+                        class="bg-danger text-center me-1 ms-1"
+                        style="
+                          border-radius: 50px;
+                          width: 40px;
+                          height: 40px;
+                          opacity: 0.4;
+                        "
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="
+                            border-radius: 50px;
+                            font-size: 20px;
+                            margin-top: 10px;
+                          "
+                        >
+                          <path
+                            d="M20.0049 22H4.00488C3.4526 22 3.00488 21.5523 3.00488 21V3C3.00488 2.44772 3.4526 2 4.00488 2H20.0049C20.5572 2 21.0049 2.44772 21.0049 3V21C21.0049 21.5523 20.5572 22 20.0049 22ZM9.00488 6H7.00488V8C7.00488 10.7614 9.24346 13 12.0049 13C14.7663 13 17.0049 10.7614 17.0049 8V6H15.0049V8C15.0049 9.65685 13.6617 11 12.0049 11C10.348 11 9.00488 9.65685 9.00488 8V6Z"
+                          ></path>
+                        </svg>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="other-info">
+              <div
+                class="customFont"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <strong class="customFont">#1. ເຄື່ອງໃຊ້</strong>
+                <b class="text-end"
+                  ><i class="fa-solid fa-chevron-right me-2"></i
+                ></b>
+              </div>
+              <div
+                class="customFont customTopWeb customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customFont">ເລກບິນ:8097822075730</b>
+                <b class="customFontItem me-2"
+                  ><b class="text-success">ສົ່ງສຳເລັດ</b></b
+                >
+              </div>
+              <div
+                class="customTopDate customTopWeb"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                "
+                bis_skin_checked="1"
+              >
+                <div class="MuiBox-root css-8atqhb" bis_skin_checked="1">
+                  <div
+                    class="MuiStepper-root MuiStepper-horizontal css-u4p24i"
+                    bis_skin_checked="1"
+                  >
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="margin-left: -7px; margin-right: -10px"
+                      bis_skin_checked="1"
+                    >
+                      ສາຂາຕົ້ນທາງ
+                      <i
+                        class="fa-solid fa-circle-arrow-right"
+                        style="color: rgb(165, 176, 184)"
+                      ></i>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="
+                        background-color: rgb(113, 120, 125);
+                        border-radius: 50%;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div
+                        class="customWidth"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                        bis_skin_checked="1"
+                      >
+                        <i
+                          class="fa-sharp fa-solid fa-truck-fast customFontItem text-white"
+                          style="border-radius: 50px; margin-top: 0px"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      bis_skin_checked="1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="customFontItem"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(165, 176, 184); margin-left: -10px"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        ></path>
+                      </svg>
+                      ສາຂາປາຍທາງ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div
+                class="customFont customTop"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="textLeftCustom customFont">ສາຂາ ຕະຫຼາດໜອງໄຮ</b>
+                <b class="textRightCustom customFont me-1"
+                  >ສາຂາ ສີມຸງຄຸນ(ເມືອງນ່ານ)</b
+                >
+              </div>
+              <div
+                class="customFont customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customTopItem text-secondary">07-11-2023, 14:43</b>
+                <b class="me-2 customFont"
+                  >ສົ່ງສຳເລັດ: <b class="text-warning customFont">2</b> ມື້</b
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-2 customPaddingTopWeb custom-list"
+            style="cursor: pointer"
+          >
+            <div class="table-container">
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" style="width: 0px">
+                      <p
+                        class="bg-danger text-center me-1 ms-1"
+                        style="
+                          border-radius: 50px;
+                          width: 40px;
+                          height: 40px;
+                          opacity: 0.4;
+                        "
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="
+                            border-radius: 50px;
+                            font-size: 20px;
+                            margin-top: 10px;
+                          "
+                        >
+                          <path
+                            d="M20.0049 22H4.00488C3.4526 22 3.00488 21.5523 3.00488 21V3C3.00488 2.44772 3.4526 2 4.00488 2H20.0049C20.5572 2 21.0049 2.44772 21.0049 3V21C21.0049 21.5523 20.5572 22 20.0049 22ZM9.00488 6H7.00488V8C7.00488 10.7614 9.24346 13 12.0049 13C14.7663 13 17.0049 10.7614 17.0049 8V6H15.0049V8C15.0049 9.65685 13.6617 11 12.0049 11C10.348 11 9.00488 9.65685 9.00488 8V6Z"
+                          ></path>
+                        </svg>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="other-info">
+              <div
+                class="customFont"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <strong class="customFont">#1. ເຄື່ອງໃຊ້</strong>
+                <b class="text-end"
+                  ><i class="fa-solid fa-chevron-right me-2"></i
+                ></b>
+              </div>
+              <div
+                class="customFont customTopWeb customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customFont">ເລກບິນ:8097822075730</b>
+                <b class="customFontItem me-2"
+                  ><b class="text-success">ສົ່ງສຳເລັດ</b></b
+                >
+              </div>
+              <div
+                class="customTopDate customTopWeb"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                "
+                bis_skin_checked="1"
+              >
+                <div class="MuiBox-root css-8atqhb" bis_skin_checked="1">
+                  <div
+                    class="MuiStepper-root MuiStepper-horizontal css-u4p24i"
+                    bis_skin_checked="1"
+                  >
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="margin-left: -7px; margin-right: -10px"
+                      bis_skin_checked="1"
+                    >
+                      ສາຂາຕົ້ນທາງ
+                      <i
+                        class="fa-solid fa-circle-arrow-right"
+                        style="color: rgb(165, 176, 184)"
+                      ></i>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="
+                        background-color: rgb(113, 120, 125);
+                        border-radius: 50%;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div
+                        class="customWidth"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                        bis_skin_checked="1"
+                      >
+                        <i
+                          class="fa-sharp fa-solid fa-truck-fast customFontItem text-white"
+                          style="border-radius: 50px; margin-top: 0px"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      bis_skin_checked="1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="customFontItem"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(165, 176, 184); margin-left: -10px"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        ></path>
+                      </svg>
+                      ສາຂາປາຍທາງ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div
+                class="customFont customTop"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="textLeftCustom customFont">ສາຂາ ຕະຫຼາດໜອງໄຮ</b>
+                <b class="textRightCustom customFont me-1"
+                  >ສາຂາ ສີມຸງຄຸນ(ເມືອງນ່ານ)</b
+                >
+              </div>
+              <div
+                class="customFont customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customTopItem text-secondary">07-11-2023, 14:43</b>
+                <b class="me-2 customFont"
+                  >ສົ່ງສຳເລັດ: <b class="text-warning customFont">2</b> ມື້</b
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-2 customPaddingTopWeb custom-list"
+            style="cursor: pointer"
+          >
+            <div class="table-container">
+              <table border="0">
+                <tbody>
+                  <tr>
+                    <td rowspan="2" style="width: 0px">
+                      <p
+                        class="bg-danger text-center me-1 ms-1"
+                        style="
+                          border-radius: 50px;
+                          width: 40px;
+                          height: 40px;
+                          opacity: 0.4;
+                        "
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          class="text-white"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="
+                            border-radius: 50px;
+                            font-size: 20px;
+                            margin-top: 10px;
+                          "
+                        >
+                          <path
+                            d="M20.0049 22H4.00488C3.4526 22 3.00488 21.5523 3.00488 21V3C3.00488 2.44772 3.4526 2 4.00488 2H20.0049C20.5572 2 21.0049 2.44772 21.0049 3V21C21.0049 21.5523 20.5572 22 20.0049 22ZM9.00488 6H7.00488V8C7.00488 10.7614 9.24346 13 12.0049 13C14.7663 13 17.0049 10.7614 17.0049 8V6H15.0049V8C15.0049 9.65685 13.6617 11 12.0049 11C10.348 11 9.00488 9.65685 9.00488 8V6Z"
+                          ></path>
+                        </svg>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="other-info">
+              <div
+                class="customFont"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <strong class="customFont">#1. ເຄື່ອງໃຊ້</strong>
+                <b class="text-end"
+                  ><i class="fa-solid fa-chevron-right me-2"></i
+                ></b>
+              </div>
+              <div
+                class="customFont customTopWeb customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customFont">ເລກບິນ:8097822075730</b>
+                <b class="customFontItem me-2"
+                  ><b class="text-success">ສົ່ງສຳເລັດ</b></b
+                >
+              </div>
+              <div
+                class="customTopDate customTopWeb"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                "
+                bis_skin_checked="1"
+              >
+                <div class="MuiBox-root css-8atqhb" bis_skin_checked="1">
+                  <div
+                    class="MuiStepper-root MuiStepper-horizontal css-u4p24i"
+                    bis_skin_checked="1"
+                  >
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="margin-left: -7px; margin-right: -10px"
+                      bis_skin_checked="1"
+                    >
+                      ສາຂາຕົ້ນທາງ
+                      <i
+                        class="fa-solid fa-circle-arrow-right"
+                        style="color: rgb(165, 176, 184)"
+                      ></i>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      style="
+                        background-color: rgb(113, 120, 125);
+                        border-radius: 50%;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div
+                        class="customWidth"
+                        style="
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        "
+                        bis_skin_checked="1"
+                      >
+                        <i
+                          class="fa-sharp fa-solid fa-truck-fast customFontItem text-white"
+                          style="border-radius: 50px; margin-top: 0px"
+                        ></i>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiStepConnector-root MuiStepConnector-horizontal css-11qjisw"
+                      bis_skin_checked="1"
+                    >
+                      <span
+                        class="MuiStepConnector-line MuiStepConnector-lineHorizontal css-95m0ql"
+                      ></span>
+                    </div>
+                    <div
+                      class="MuiStep-root MuiStep-horizontal customFontItem css-mro3c9"
+                      bis_skin_checked="1"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        class="customFontItem"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(165, 176, 184); margin-left: -10px"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        ></path>
+                      </svg>
+                      ສາຂາປາຍທາງ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div
+                class="customFont customTop"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="textLeftCustom customFont">ສາຂາ ຕະຫຼາດໜອງໄຮ</b>
+                <b class="textRightCustom customFont me-1"
+                  >ສາຂາ ສີມຸງຄຸນ(ເມືອງນ່ານ)</b
+                >
+              </div>
+              <div
+                class="customFont customTopDate"
+                style="display: flex; justify-content: space-between"
+                bis_skin_checked="1"
+              >
+                <b class="customTopItem text-secondary">07-11-2023, 14:43</b>
+                <b class="me-2 customFont"
+                  >ສົ່ງສຳເລັດ: <b class="text-warning customFont">2</b> ມື້</b
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 0px;
+            z-index: 1000;
+          "
+        >
+          <button
+            class="btn btn-dark btn-radius btn-block me-2 text-nowrap shadow-none"
+          >
+            <i class="fas fa-print me-1" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
